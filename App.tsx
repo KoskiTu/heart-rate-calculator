@@ -63,6 +63,7 @@ const styles = StyleSheet.create({
     color: 'white',
     marginBottom: 20,
     width: '30%',
+    textAlign: 'center',
   },
   reslt: {
     fontSize: 16,
