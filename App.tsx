@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, TextInput } from 'react-native';
 import React, { useState } from 'react';
 
 export default function App() {
+  // määritellään tila ikää varten
   const [age, setAge] = useState<string>('')
   const numericAge = parseInt(age)
   const isValidAge = !isNaN(numericAge) && numericAge > 0
@@ -11,6 +12,7 @@ export default function App() {
   const lowerLimit = isValidAge ? (220 - numericAge) * 0.65 : 0
   const upperLimit = isValidAge ? (220 - numericAge) * 0.85 : 0
 
+  // määritellään komponentin renderöinti
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Heart Rate Calculator</Text>
@@ -34,32 +36,37 @@ export default function App() {
     </View>
   );
 }
-
+// määritellään tyylit
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#3a3030',
     alignItems: 'center',
     justifyContent: 'center',
   },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
+    color: 'white',
     marginBottom: 20,
   },
   label: {
-    fontSize: 18,
+    fontSize: 20,
+    color: 'white',
     marginBottom: 10,
   },
   input: {
     borderWidth: 1,
     borderColor: 'gray',
     padding: 10,
+    backgroundColor: '#4a4a4a',
+    color: 'white',
     marginBottom: 20,
-    width: '80%',
+    width: '30%',
   },
   reslt: {
     fontSize: 16,
+    color: 'white',
     marginBottom: 10,
   },
 });
