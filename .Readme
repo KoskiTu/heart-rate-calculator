@@ -1,0 +1,4 @@
+Here is my first week's assignment. I have created a simple heart rate calculator using React Native.
+The app takes the user's age as input and calculates the target heart rate range based on the formula (220 - age) * 0.65 for the lower limit and (220 - age) * 0.85 for the upper limit.
+The results are displayed on the screen,
+and the app has a dark theme with white text for better visibility.
